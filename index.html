@@ -1,0 +1,126 @@
+<!-- Index generado para conecer los elementos mas importantes dentro de la estructura del html -->
+<!DOCTYPE html> <!-- Definición de tipo de documento -->
+<html lang="en"><!-- 'Elemento maestro' y 'lang' indica el lenguaje de nuestra pag web -->
+<head><!-- Encabezado o Introducción a la pag web -->
+  <meta charset="UTF-8"><!-- El tipo de caracteres que ingresemos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="little-boxes.css" type="text/css"><!-- direccion de estilos CSS automaticamente -->  
+  <title>Libro</title><!-- Titulo de nuestra pag. web -->
+</head>
+<body id="inicio"><!-- Cuerpo de la pag. web -->
+<!-- <p><strong><em>Este es un parrafo </em></strong></p> -->
+<!-- Parrafo -->
+<!-- 'strong' sirve para poner las letras en negritas -->
+<!-- 'em' sirve para poner las letras como cursiva -->
+<div id="wrapper"> <!--división para proteger la pag web-->
+  <div id="encabezado">
+    <a href="#areatexto" class="skiplink">Ir al contenido</a>
+    <h1><img src="h1.png" alt="Juego de niños" width="300" height="100" title="Este es un h1"></h1> <!-- titulo etiqueta h1 'h' heading -->
+    <p>Diseño de paginas web con CSS, Fundamentos</p><!-- parrafo -->
+  </div>
+  <div id="navegador">
+    <ul>
+      <li id="nav01">
+      <a href="index.html">Inicio</a></li>
+      <li id="nav02">
+      <a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+  <div id="areatexto">
+    <h2>Inicio</h2><!-- este es un heading h2 -->
+    <p>Las paginas web estan compuestas de <strong>cuadros rectangulares</strong> que se pueden colocar unos
+    junto a otros o super poner entre ellos. Todo lo que sea redondo es un truco, un grafico o ambas cosas.</p>
+
+    <p>Los siguientes pasos muestran el camino desde la creación de las <em>cajas</em> hasta la <em>pagina web</em> terminada:</p>
+
+    <p>Diseño de paginas web con CSS. <span>Fundamentos.</span></p>
+
+    <ul><!-- Lista desordenada con viñetas -->
+      <li>Asi funciona HTML</li><!-- Elementos dentro de la lista -->
+      <li>Elementos HTML importantes</li>
+      <li>Diseño con CSS</li>
+    </ul>
+
+    <ol><!-- Lista ordenada enumerada -->
+      <li>Asi funciona HTML</li><!-- Elementos dentro de la lista -->
+      <li>Elementos HTML importantes</li>
+      <li>Diseño con CSS</li>
+    </ol>
+
+    <ul><!-- Lista anidada -->
+      <li>Asi funciona HTML</li><!-- Elementos dentro de la lista -->
+      <li>Elementos HTML importantes</li>
+        <ul>
+          <li>Títulos</li>
+          <li>Parrafos y Listas</li>
+          <li>Vinculos e Imagenes</li>
+        </ul>
+      <li>Diseño con CSS</li>
+    </ul>
+
+    <dl><!-- Lista de definición -->
+      <dt>Termino a definir</dt>
+      <dd>Definición o explicación</dd>
+    </dl>
+<!-- 'a' realiza un hiperenlace 'href' nos muestra la direccion del enlace-->
+    <p>Visita <a href="https://jmacias.files.wordpress.com/2011/02/n33-css-un-juego-de-ninos-pc-cuadernos.pdf" title="CSS juego de niños">mi sitio web</a> para mas información.</p>
+
+    <p>El siguiente parrafo en un bloque de cita con indicación de la fuente:</p>
+    <blockquote><!-- Elemento de bloque para citas -->
+      <p>Podemos resaltar citas de otros autores en un parrafo propio con formato diferente</p>
+      <p>La norma es hacer visualizar tales parrafos de forma rezaltada y diferente del texto adicional <cite><!-- Indicaremos la fuente de la cita al final de la fuente-->(Fuente: <a href="http://es.selfhtml.org/html/text/zitate_adressen.html">Serlfhtml</a>)</cite></p>
+
+    </blockquote>
+
+    <table border="1"><!-- Forma de declarar una tabla y darle borde -->
+
+      <tr><!-- table row 'aqui abre la primra fila' -->
+        <td>Fila 1, Celda 1</td>
+        <td>Fila 1, Celda 2</td>
+      </tr><!-- aqui cierra la fila 1 -->
+      <tr><!-- table row 'aqui abre la segunda fila' -->
+        <td>Fila 2, Celda 1</td>
+        <td>Fila 2, Celda 2</td>
+      </tr><!-- aqui cierra la fila 2 -->
+    </table>
+
+      <br>
+      <!-- Estructura de la tabla con las divisiones logicas de la misma -->
+    <table border="1"><!-- Tabla con borde 1 -->
+      <thead><!-- table heading 'titulo de la tabla' -->
+        <tr>
+          <th>thead Fila 1, Columna 1</th><!-- titulo columna1 -->
+          <th>thead Fila 1, Columna 2</th><!-- titulo columna2 -->
+        </tr>
+      </thead>
+      <tfoot><!-- contenido del pie de la tabla -->
+        <tr>
+          <td>tfoot</td><!-- contenido del pie de la columna 1-->
+          <td>tfoot</td><!-- contenido del pie de la columna 2-->
+        </tr>
+      </tfoot>
+      <tbody><!-- 'contenido del cuerpo de la tabla' -->
+        <tr>
+          <td>tbody F1, C1</td><!-- contenido columna 1 fila 1-->
+          <td>tbody F1, C2</td><!-- contenido columna 2 fila 1-->
+        </tr>
+        <tr>
+          <td>tbody F2, C1</td><!-- contenido columna 1 fila 2-->
+          <td>tbody F2, C2</td><!-- contenido columna 2 fila 2-->
+        </tr>
+      </tbody>
+    </table><!-- cierra la tabla con estructura logica -->
+
+  </div>
+  <br>
+  <div id="pie">
+    <address>
+      Juego de niños &middot; Calle cuadro;12 &middot; 02943 Boxland
+      <br>
+      Tel: 035774; Fax: 035774
+    </address>
+  </div>
+</div>
+</body>
+</html>

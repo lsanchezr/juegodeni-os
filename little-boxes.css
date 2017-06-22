@@ -1,0 +1,47 @@
+/*Esta sera  mi StyleSheet del libro CSS un Juego de Niños*/
+body{
+  color: white;/*color de fuente*/
+  background-color: #8c8c8c;/*color de fondo*/
+  font-family: Verdana, Arial, Helvetica, sans-serif;/*Tipo de letra*/
+  font-size: small; /*Tamaño de fuente*/
+}
+#wrapper{
+  color: black;
+  background-color: white;
+}
+#encabezado{
+  color: black;
+  background-color: #f3c600;
+}
+h1{
+  font-size: 150%;
+}
+h2{
+  font-size: 130%;
+}
+address{
+  text-align: center;/* texto centrado*/
+  font-size: 80%;/*tamaño de la fuente*/
+  font-style: normal;/*tipo de fuente*/
+  letter-spacing: 2px;/*distancia entre las letras*/
+  line-height: 1.5em;/*distancia entre la lineas*/
+}
+a{
+  text-decoration: none;
+}
+a:link{
+  color: #d90000;
+}
+a:visited{
+  color: #cc6666;
+}
+a:hover, a:focus{
+  text-decoration: underline;
+}
+a:active{
+  color: white;
+  background-color: #d90000;
+}
+.skiplink{
+  display: none;
+}
