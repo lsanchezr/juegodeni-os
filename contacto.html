@@ -6,38 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="little-boxes.css" type="text/css">
-  <title>Libro - Pagina Contacto</title><!-- Titulo de nuestra pag. web -->
+  <title>Formulario Contacto</title><!-- Titulo de nuestra pag. web -->
 </head>
 <body id="pag contacto"><!-- Cuerpo de la pag. web -->
 <!-- <p><strong><em>Este es un parrafo </em></strong></p> -->
 <!-- Parrafo -->
 <!-- 'strong' sirve para poner las letras en negritas -->
 <!-- 'em' sirve para poner las letras como cursiva -->
-<div id="wrapper"> <!--división para proteger la pag web-->
-  <div id="encabezado">
-    <a href="#areatexto" class="skiplink">Ir al contenido</a>
+<div id="container"> <!--división para proteger la pag web-->
+  <!-- wrapper -->
+  <div id="header"><!-- encabezado -->
+    <a href="#section" class="skiplink">Ir al contenido</a><!-- area de texto -->
     <h1><img src="h1.png" alt="Juego de niños" width="300" height="100" title="Este es un h1"></h1> <!-- titulo etiqueta h1 'h' heading -->
-    <p>Diseño de paginas web con CSS, Fundamentos</p><!-- parrafo -->
+    <p>Diseño de paginas web con CSS</p><!-- parrafo -->
   </div>
-  <div id="navegador">
+  <div id="nav"><!-- navegador -->
     <ul>
       <li id="nav01">
       <a href="index.html">Inicio</a></li>
       <li id="nav02">
-      <a href="Contacto.html">Contacto</a></li>
+      <a href="contacto.html">Contacto</a></li>
     </ul>
+
+    <!-- Ejemplo de lista ordenada para aplicar estilos anidados -->
+    <p>Ejemplo lista ordenada con estilos de numero y letras</p>
+    <ol>
+      <li>Este punto utiliza numeros</li>
+      <ol>
+        <li>Este punto utiliza una letra minuscula</li>
+        <li>Este punto utiliza una letra minuscula</li>
+      </ol>
+      <li>Este punto utiliza numeros</li>
+    </ol>
   </div>
 
-  <div id="areatexto">
+  <div id="section"><!-- area de texto -->
     <h2>Contacto</h2><!-- este es un heading h2 -->
     <p>Aqui va un formulario de contacto</p>
   </div>
   <br>
-  <div id="pie">
+  <div id="footer"><!-- Pie -->
     <address>
-      Juego de niños &middot; Calle cuadro;12 &middot; 02943 Boxland
+      CSS Juego de Niños &middot; Calle: Nativitas &middot; 09230 Polanco.
       <br>
-      Tel: 035774; Fax: 035774
+      Tel: 5578239012; Fax: 5578917253
     </address>
   </div>
 </div>

@@ -1,23 +1,60 @@
 /*Esta sera  mi StyleSheet del libro CSS un Juego de Niños*/
+*{
+  padding: 0; margin: 0;
+}
 body{
   color: white;/*color de fuente*/
-  background-color: #8c8c8c;/*color de fondo*/
-  font-family: Verdana, Arial, Helvetica, sans-serif;/*Tipo de letra*/
-  font-size: small; /*Tamaño de fuente*/
+  background-color: #3CFCE7  ;/*color de fondo*/
+  /*font-family: Verdana, Arial, Helvetica, sans-serif;/*Tipo de letra*/
+  /*font-size: small; /*Tamaño de fuente*/
 }
-#wrapper{
+#container{
   color: black;
   background-color: white;
+  width: 70%;/*Anchura del area de contenido*/
+  margin-top: 10px;
+  margin-right: auto;/*Margen derecho automatico*/
+  margin-bottom: 10px;
+  margin-left: auto;/*Margen izquierdo automatico*/
 }
-#encabezado{
+#header{/*estilos por medio del id '#'*/
   color: black;
-  background-color: #f3c600;
+  background-color: rgba(199, 8, 164, 0.55);
+  /*background-image: url(logo_bbva.png);*/
+  /*background-repeat: repeat-y;/*Vertical uno debajo de otro, para repetición horizontal podemos utilizar repeat-x*/
+  /*background-position: center;*//*Para centrar una imagen de fondo*/
+  /*background-attachment: fixed;/*No se desplaza posición fija*/*/
+  /*padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 20px;*/
+}
+#footer{
+  padding: 20px;
+  padding-top: 10px;/*Relleno superior, debajo de la linea*/
+  border-top: solid 1px #8c8c8c;/*Borde superior*/
+  margin-top: 20px;/*Margen superior, encima de la linea*/
+}
+#header img{/*selector anidado*/
+  /*background-color: white;*/
+  /*border: solid 1px #d9d9d9;*/
+  padding-top: 20px;
 }
 h1{
   font-size: 150%;
 }
 h2{
   font-size: 130%;
+  margin-bottom: 1em;
+  font-style: normal;
+  letter-spacing: 2px;
+  padding-top: 10px;
+  border-top: 1px solid #A9122A;
+  margin-top: 20px;
+}
+.p1{
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
 }
 address{
   text-align: center;/* texto centrado*/
@@ -26,22 +63,64 @@ address{
   letter-spacing: 2px;/*distancia entre las letras*/
   line-height: 1.5em;/*distancia entre la lineas*/
 }
-a{
+a{/*elimina el subrrallado de los hipervinculos por default*/
   text-decoration: none;
 }
-a:link{
+a:link{/*color de un vinculo no visitado*/
   color: #d90000;
 }
-a:visited{
+a:visited{/*color de un vinculo visitado*/
   color: #cc6666;
 }
-a:hover, a:focus{
+a:hover, a:focus{/*'hover' modifica el vinculo mientras el puntero esta encima, 'focus' saltando mediante la tacle Tab, en general restituyen el subrrayado tipico de los vinculos*/
   text-decoration: underline;
 }
-a:active{
+a:active{/* es un vinculo 'se activa' cuando se hace click, modifica el color de fondo y de la fuente*/
   color: white;
   background-color: #d90000;
 }
-.skiplink{
+.skiplink{/*Ocultarlo de la pag principal*/
   display: none;
+}
+#nav{
+  background-color: #ffeda0;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+#nav li{/*selectores anidados*/
+  display: inline;/*li al mismo nivel*/
+  list-style-type: none;/*sin viñetas*/
+}
+#nav ol li{/*selectores anidados*/
+
+  list-style-type: decimal;
+}
+#nav ol ol li{/*selectores anidados*/
+  list-style-type: lower-alpha;
+}
+#section{
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+p ul{
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 1em;/*Margen Inferior*/
+  margin-left: 0;
+}
+ul ul{
+  margin: 0;
+}
+ol ol{
+  margin: 0;
+}
+li{
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 1em;/*Margen izquierdo*/
 }
