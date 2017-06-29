@@ -5,10 +5,11 @@
   <meta charset="UTF-8"><!-- El tipo de caracteres que ingresemos -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="little-boxes.css" type="text/css">
+  <link rel="stylesheet" href="little-boxes.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="imprimirpantalla.css" type="text/css" media="print">
   <title>Formulario Contacto</title><!-- Titulo de nuestra pag. web -->
 </head>
-<body id="pag contacto"><!-- Cuerpo de la pag. web -->
+<body id="pagcon" onload="document.formulario.remitente.focus();"><!-- Cuerpo de la pag. web -->
 <!-- <p><strong><em>Este es un parrafo </em></strong></p> -->
 <!-- Parrafo -->
 <!-- 'strong' sirve para poner las letras en negritas -->
@@ -17,8 +18,8 @@
   <!-- wrapper -->
   <div id="header"><!-- encabezado -->
     <a href="#section" class="skiplink">Ir al contenido</a><!-- area de texto -->
-    <h1><img src="h1.png" alt="Juego de niños" width="300" height="100" title="Este es un h1"></h1> <!-- titulo etiqueta h1 'h' heading -->
-    <p>Diseño de paginas web con CSS</p><!-- parrafo -->
+    <h1><center><img src="css.png" alt="Juego de niños" width="300" height="100" title="Este es un h1"></center></h1> <!-- titulo etiqueta h1 'h' heading -->
+    <p class="p1"><center>Diseño de paginas web con <span>CSS.</span></center></p><!-- parrafo -->
   </div>
   <div id="nav"><!-- navegador -->
     <ul>
@@ -27,22 +28,39 @@
       <li id="nav02">
       <a href="contacto.html">Contacto</a></li>
     </ul>
-
+  </div>
     <!-- Ejemplo de lista ordenada para aplicar estilos anidados -->
-    <p>Ejemplo lista ordenada con estilos de numero y letras</p>
-    <ol>
+
+
+
+  <div id="section"><!-- area de texto -->
+    <!-- <p>Ejemplo lista ordenada con estilos de numero y letras</p>
+    <ol id="l1">
       <li>Este punto utiliza numeros</li>
-      <ol>
+      <ol id="l2">
         <li>Este punto utiliza una letra minuscula</li>
         <li>Este punto utiliza una letra minuscula</li>
       </ol>
       <li>Este punto utiliza numeros</li>
-    </ol>
-  </div>
+    </ol> -->
 
-  <div id="section"><!-- area de texto -->
     <h2>Contacto</h2><!-- este es un heading h2 -->
-    <p>Aqui va un formulario de contacto</p>
+    <center><form id="formulario" name="Formulario contacto" method="post" action="https://mail.google.com/mail" >
+      <input type="hidden" name="recipient" value="lilisanrom@gmail.com">
+      <div>
+        <label for="remitente">Tu e-mail:
+        </label>
+        <input type="text" name="remitente" id="remitente">
+      </div>
+      <div>
+        <label for="texto">Texto: </label>
+        <textarea id="text" name="text"rows="8" cols="80">
+        </textarea>
+      </div>
+      <div>
+        <input type="submit" onclick="enviarEmail()" id="submit" value="Enviar" />
+      </div>
+    </form></center>
   </div>
   <br>
   <div id="footer"><!-- Pie -->
@@ -54,4 +72,24 @@
   </div>
 </div>
 </body>
+<script type="text/javascript">
+function enviarEmail() {
+
+var para       = formulario.para.value;
+var cc         = formulario.cc.value;
+var cco        = Formulario.cco.value;
+var asunto     = Formulario.asunto.value;
+var cuerpo     = Formulario.cuerpo.value;
+
+var mensaje = "mailto:" + para +
+  "?cc=" + cc +
+  "&bcc=" + cco +
+  "&subject=" + escape(asunto) +
+  "&body=" + escape(cuerpo);
+
+window.location = mensaje;
+}
+
+
+</script>
 </html>
